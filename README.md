@@ -17,7 +17,9 @@ The audit focuses on interaction points such as:
 - whether candidates or gating conditions can be determined at the point they are needed;
 - whether current behavior incorrectly depends on unresolved future decisions or state changes;
 - whether automatic processing has a determined input and result;
-- whether individually designed mechanisms create a new unresolved dependency when combined; and
+- whether individually designed mechanisms create a new unresolved dependency when combined;
+- whether repeatable optional decisions have a defined continuation, progress, or stop contract;
+- whether equivalent selection orders and completed learning/evaluation action units are determined when applicable; and
 - where automatic continuation ends and control returns to an external actor.
 
 Capability matrices and per-feature checklists remain useful supporting evidence, but they do not replace tracing the path itself.
@@ -25,7 +27,7 @@ Capability matrices and per-feature checklists remain useful supporting evidence
 ## Responsibility
 
 This skill audits whether an existing design is complete across an execution path.
-It does not define requirements, choose the missing design decision, prescribe implementation, define tests, or prove exhaustive completion across a finite target set.
+It does not define requirements, choose the missing design decision, prescribe implementation, define tests, or prove exhaustive completion across a finite target set. [agent-environment-boundary-design](https://github.com/supersovaa/agent-environment-boundary-design) owns the relevant agent–environment interaction design.
 
 ## Installation
 
