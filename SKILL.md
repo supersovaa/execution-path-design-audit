@@ -27,7 +27,9 @@ Check, as applicable:
 - whether candidate sets, admissibility, or other gating decisions can be determined from information already established at that point;
 - whether a result depends on a future state change, an unresolved decision, or hypothetical optional processing, and if so, whether the design already defines how that dependency is handled;
 - whether automatic processing has determined inputs and externally meaningful results;
-- whether combining individually designed mechanisms introduces an unresolved dependency between them; and
+- whether combining individually designed mechanisms introduces an unresolved dependency between them;
+- when optional decisions can repeat, whether the settled contract determines continuation, progress, stopping, or deliberately unbounded interaction independently of each action's legality;
+- when independent selections can commute or multiple selections constitute one action, whether order, completed action meaning, and applicable learning or evaluation units are determined; and
 - after a decision or automatic step, how far processing continues and where the next external stop or completion boundary occurs.
 
 ## Use capability checks as supporting evidence
@@ -48,4 +50,4 @@ Do not invent a resolution as part of this audit.
 
 This skill audits design completion across execution paths.
 
-Requirement definition, design decisions, implementation planning, implementation mechanics, test definition, and exhaustive completion across a finite target set remain with their owning workflows.
+Requirement definition, design decisions, implementation planning, implementation mechanics, test definition, and exhaustive completion across a finite target set remain with their owning workflows. [agent-environment-boundary-design](https://github.com/supersovaa/agent-environment-boundary-design/blob/main/SKILL.md) owns agent–environment interaction design when that is the audited contract.
