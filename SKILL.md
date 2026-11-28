@@ -1,11 +1,11 @@
 ---
 name: execution-path-design-audit
-description: Audit design completion by tracing actual execution paths across interacting decisions, automatic processing, state changes, and external boundaries instead of relying on isolated capability checks.
+description: Use when reviewing a behavioral design for completeness. Examine how its execution reaches the next external boundary.
 ---
 
 # Execution Path Design Audit
 
-Use this skill when deciding whether a design is complete for behavior whose execution depends on multiple interacting mechanisms, decisions, or transitions.
+When a behavior spans decisions, automatic processing, or state transitions, trace the connected path before declaring that behavior fully designed.
 
 ## Core rule
 
